@@ -238,16 +238,6 @@ footer a {
         display: none;
     }
     
-    /* Style rules for table*/
-    table {
-        border: 1px solid #2a1f14;
-        border-collapse: collapse;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
     caption {
         font-size: 1.5em;
         font-weight: bold;
@@ -276,6 +266,12 @@ footer a {
     
     .form-grid {
         display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+    
+    .btn {
+        grid-column: 1 / span 2;
     }
     
     /* Desktop Viewport: Style rules for nav area */
@@ -294,7 +290,6 @@ footer a {
     }
     
     /* Desktop Viewport: Style rules for main content */
-    /* Desktop Viewport: Show desktop class, hide mobile-tablet class */
     #info ul {
         margin-left: 5%;
     }
@@ -309,13 +304,23 @@ footer a {
         font-size: 2em;
     }
     
+     /* Style rules for table*/
+    table {
+        border: 1px solid #2a1f14;
+        border-collapse: collapse;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
     .desktop {
         display: grid;
     }
     
     .mobile-tablet {
     display: none;
-}
+    }
     
 }
 
